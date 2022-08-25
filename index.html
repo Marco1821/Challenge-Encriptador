@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/25c9882322.js" crossorigin="anonymous"></script>
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <img src="imagenes/Logo.png" alt="logo alura" id="logo">
+    <textarea name="text-input" id="text-input" placeholder="Ingrese el texto aqui"></textarea>
+    <div id="advertencia">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        Solo letras minúsculas y sin acentos
+    </div>
+
+    <div id="buttons-container">
+        <button id="encriptar" class="button" onclick="encriptar()">Encriptar</button>
+        <button id="desencriptar" class="button" onclick="desencriptar()">Desencriptar</button>
+    </div>
+
+    <div id="output-container">
+        <div id="output">
+            <div id="corte">
+                <p id="text-output"></p>
+            </div>
+            <button id="copiar" class="button" onclick="copiar('text-output')">Copiar</button>
+        </div>
+        <div id="no-mensaje">
+            <img src="imagenes/Muñeco.png" id="muñeco" alt="muñeco">
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+body {
+    background: #E5E5E5;
+    font-family: Inter;
+}
+
+#logo {
+    position: absolute;
+    left: 2%;
+    top: 6%;
+}
+
+#text-input {
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 14%;
+    top: 24%;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    outline: none;
+}
+
+#advertencia {
+    position: absolute;
+    left: 14.5%;
+    top: 77%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.9;
+}
+
+#buttons-container {
+    position: absolute;
+    left: 14%;
+    top: 81%;
+}
+
+.button {
+    width: 250px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#encriptar {
+    background: #0A3871;
+    border: none;
+    color: #E5E5E5;
+}
+
+#desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    margin-left: 15px;
+    color: #0A3871;
+}
+
+#output-container {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 30%;
+    height: 77%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    word-wrap: break-word;
+    background: white;
+    border: none;
+    box-shadow: 7px 6px 17px -4px rgba(0,0,0,0.68);
+}
+
+#text-output {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    padding: 0 15px;
+}
+
+#copiar {
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 125px);
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+#no-mensaje {
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+
+#no-mensaje h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+#no-mensaje p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+@media only screen and (max-device-width: 1200px) {
+    #text-input {
+        width: 90%;
+        height: 30%;
+        left: 5%;
+        top: 15%;
+    }
+    #buttons-container {
+        position: absolute;
+        width: 100%;
+        top: 60%;
+        left: 0;
+        text-align: center;
+    }
+    .button {
+        width: 40%;
+        height: 70px;
+        font-size: 18px;
+    }
+    #advertencia {
+        position: absolute;
+        left: 10%;
+        top: 57%;
+        font-size: 15px;
+    }
+    #output-container {
+        top: calc(60% + 100px);
+        left: 7.5%;
+        width: 85%;
+        height: auto;
+        min-height: 25%;
+    }
+    #muñeco {
+        display: none;
+    }
+    #no-mensaje h3 {
+        font-size: 30px;
+    }
+    
+    #no-mensaje p {
+        font-size: 18px;
+    }
+    #copiar {
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+}
+
+@media only screen and (max-device-width: 550px) {
+    #text-input {
+        width: 85%;
+    }
+    #buttons-container {
+        top: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .button {
+        width: 80%;
+        height: 55px;
+    }
+    #desencriptar {
+        margin-left: 0;
+    }
+    #advertencia {
+        position: absolute;
+        left: 11%;
+        top: 56%;
+        font-size: 15px;
+    }
+    #output-container {
+        top: calc(60% + 150px);
+        left: 7.5%;
+        width: 80%;
+        min-height: 15%;
+    }
+    #corte {
+        clear: both;
+    }
+    #no-mensaje h3 {
+        font-size: 26px;
+    }
+    
+    #no-mensaje p {
+        font-size: 14px;
+    }
+    #copiar {
+        width: 70%;
+        left: 15%;
+        height: 55px;
+        position: relative;
+    }
+}
