@@ -159,7 +159,6 @@ body {
         left: 7.5%;
         width: 85%;
         height: auto;
-        min-height: 25%;
     }
     #muñeco {
         display: none;
@@ -172,9 +171,9 @@ body {
         font-size: 18px;
     }
     #copiar {
-        position: relative;
         width: 50%;
         left: 25%;
+        position: relative;
     }
 }
 
@@ -206,7 +205,6 @@ body {
         top: calc(60% + 150px);
         left: 7.5%;
         width: 80%;
-        min-height: 15%;
     }
     #corte {
         clear: both;
