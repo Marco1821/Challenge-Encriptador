@@ -3,7 +3,6 @@ document.getElementById("output").style.display = "none";
 function encriptar() {
     var input = document.getElementById("text-input").value;
     input = input
-        .toLowerCase()
         .replace(/e/g, "enter")
         .replace(/i/g, "imes")
         .replace(/a/g, "ai")
